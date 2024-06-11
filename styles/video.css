@@ -1,0 +1,153 @@
+
+.thumbnail
+{
+  width:100%;
+}
+
+
+
+.video-info-grid
+{
+  display:grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.inside
+{
+  position: relative;
+  display: flex;
+  width: 36px;
+  border-radius: 40px;
+}
+.profile-picture
+{
+  width: 36px;
+  border-radius: 40px;
+}
+.channel-info
+{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 12px rgba(100, 100, 100, 0.812);
+  bottom:-80px;
+  border-radius: 8px;
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+  background-color: white;
+  transition: opacity 0.15s;
+}
+.left-part
+{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: flex;
+}
+.profile-picture-in-detail
+{
+  height: 52px;
+  width: 52px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.right-part
+{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 72px;
+  width: 150px;
+}
+.youtuber-name
+{
+  font-size: 15px;
+  white-space: nowrap;
+  margin-bottom: 3px;
+}
+.number-of-subscribers
+{
+  color: rgb(100, 100, 100);
+  font-size: 13px;
+  white-space: nowrap;
+}
+.inside:hover .channel-info
+{
+  opacity:1;
+}
+.video-title
+{
+  font-size: 14px;
+  font-weight: 500;
+  line-height:20px;
+  margin-top:0;
+  margin-bottom : 10px;
+}
+.thumbnail-row
+{
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-author,
+.video-stats
+{
+  font-size:12px;
+  color: rgb(96, 96, 96);
+}
+.video-author
+{
+  margin-bottom:4px;
+}
+.video-grid
+{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  column-gap:16px;
+  row-gap: 40px;
+}
+
+@media(max-width:750px)
+{
+  .video-grid
+  {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media(min-width:751px) and (max-width:999px)
+{
+  .video-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width:1000px)
+{
+  .video-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-title-link
+{
+  text-decoration:none;
+  color:black;
+}
+
+.video-time
+{
+  position:absolute;
+  right:8px;;
+  bottom:10px;
+  color:white;
+  background-color: black;
+  font-size:12px;
+  font-weight:500;
+  padding:4px;
+  border-radius: 2px;
+}
