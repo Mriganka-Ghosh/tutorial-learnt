@@ -4,8 +4,6 @@
   width:100%;
 }
 
-
-
 .video-info-grid
 {
   display:grid;
@@ -18,7 +16,7 @@
   display: flex;
   width: 36px;
   border-radius: 40px;
-}
+} 
 .profile-picture
 {
   width: 36px;
@@ -133,10 +131,27 @@
   }
 }
 
+@media(min-width:1001px)
+{
+  body
+  {
+    font-size: 14px;
+  }
+  .video-title
+  {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .video-title-link
 {
   text-decoration:none;
   color:black;
+}
+.video-author-link
+{
+  text-decoration: none;
 }
 
 .video-time
